@@ -1,0 +1,24 @@
+maxIterations = 500;
+gridSize = 1000;
+xlim = [-0.748766713922161, -0.748766707771757];
+ylim = [ 0.123640844894862,  0.123640851045266];
+x = gpuArray.linspace( xlim(1), xlim(2), gridSize );
+
+
+
+syms x y 
+
+
+f=str2func('@(x,y)[((x).^3)-(3*x.*(y.^2))-1,(3*(x.^2).*y)-(y.^3)]');
+
+J=jacobian([f], [x, y])
+sz=size(J)
+   Jd=zeros(sz)
+for i=1:sz(2)
+    for j=1;sz(1)
+     Jd(i,j)(x,y)=J
+    end
+end
+
+
+P(1,4)
