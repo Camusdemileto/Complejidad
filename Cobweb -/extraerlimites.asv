@@ -1,0 +1,26 @@
+function saux = extraerlimites (f)
+saux=[];
+for i=1:length(f)
+    
+      if strcmp(f(i),'(')
+          i=i+1;
+          saux=cat(2,saux,[str2num(f(i))+0.01]);
+       
+      elseif strcmp(f(i+1),')') 
+          
+          
+          saux=cat(2,saux,[str2num(f(i))-0.01])
+          break
+      elseif  strcmp(f(i),'') || strcmp(f(i),']') || strcmp(f(i),',')
+        
+      else
+         
+          saux=cat(2,saux,[f(i)]);
+          
+      end
+    
+    
+end
+
+
+end
