@@ -6,7 +6,7 @@ El primero de estos son las cuencas de atraccion del metodo newton-raphson permi
 
 El segundo sistema es graficas cobweb para sistemas 1D, el fin de este sistema es poder trabajar con sistemas caóticos algunos de los mas populares son la funcion tienda la funcion logistica o sel seno caótico sin embargo tambien funciona si el usuario quiere observar los ciclos necesarios para que se converja a un punto fijo desde una condicion inicial aleatoria, el usuario es libre de colocar los parametros que desee segun la funcion que valla a manejar el numero de iteraciones , tambien cuenta con la capacidad de guardar la grafica en una archivo png o jpg.
 
-Bifurcación y lyapunóv 
+Bifurcación y lyapunóv estras graficas tan importantes en la primera permiten ver como se comportará el sistema de acuerdo al valor de los parametros, si tendra un comportamiento inestable o estable ( que dependiendo del contexto puede ser deseado o no ej, crecimiento desmesurado de la poblacion inestable y exticion por falta de recursos estable ) algunos utilizan el modelado me diante diagramas de forrester para caracterizar comportamientos sociales por lo general describiendo las variables, sus razones de cambio y las incidencias que tienes en otras variables y razones de cambio por ende modelando el sistema de ecuaciones diferenciales  
 
 
 Nota bifurcación y lyapunov aun se esta trabajando para la expansión de sistemas en N dimensiones para que puedan analizarse el comportamiento tanto por variable como por parametros 
